@@ -1,0 +1,110 @@
+header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color:#4466FF;
+        height: 107px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8ECFC;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* form{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 35px; */
+
+/* } */
+form h2{
+    text-align: center;
+    /* position: absolute; */
+    line-height: 48.41px;
+    font-weight: 700px;
+    font-size: 40px;
+}
+form h3{
+    /* position: absolute; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24.38px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    font-family: Montserrat Alternates;
+}
+form input{
+    width: 547px;
+    height: 56;
+    border-radius: 11px;
+    border: 1px solid;
+    gap: 11px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+
+    
+}
+form input::placeholder{
+   
+    width: 497px;
+    height: 19px;
+    line-height: 19.36px;
+    font-size: 16px ;
+}
+form input.star::placeholder{
+    position: absolute;
+    top: 23px;
+}
+form button{
+    cursor: pointer;
+    border-radius: 28px; ;
+    background-color: #4466FF;
+    width: 554px;
+    height: 53px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29.43px;
+    font-family: Century Gothic;
+
+    /* display: flex;
+    flex-direction: column; 
+    align-items: flex-start;  */
+    /* gap: 35px; */
+
+}
+form a{
+    width: 148px;
+    height: 17px;
+    display: flex;
+    margin-left: 200px;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17.17px;
+    color: rgba(0, 0, 0, 0.36);
+
+
+
+
+
+    /* flex-direction: column;  */
+    /* align-items: flex-start;  */
+}
+.icon-box {
+background-image: url(login/img/email.png);
+}
