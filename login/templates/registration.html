@@ -4,26 +4,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'login/css/reg.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 <header>
-    <h1>QREasy</h1>
+    <img src="{% static 'login/img/logo.png' %}" alt="">
+    <div class="logo">QREasy</div>
+
 </header>
 
 <body>
     <form method="post">
+        
             <h2>Зареєструватись</h2>
             <h3>Електрона пошта</h3>
-            <!-- <span class="email"><img src="https://s3-alpha-sig.figma.com/img/312c/ccb9/43fcd696006fe73bec27ed16a81e0c2e?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JdavFVXgkhCNUJTtR50h-qSOr9kHLZusPs01oNOlQF7lldV1LPTLEPt0DOFRtKJxw~wIZGW4NI9Z5fTsXS8YTKU0gX9pQ3vs-xrdp45S6E31XaU-LFbznbfTyKQSjM9H~wjebnQzR8CFSwHJ9X8KpL0wL2mcqa99PZT8HaLPMznQTbI3cEqOtfYQhIw7-Bmxn7T6h17F8YFqjqTZayOGiv-3GEHxMCiL~9q8ZM4AfsHLaGIpcNddC~GbM65QucV-a5tw7tUrGWXRUoedwu1DLtdGwZmkPf7nRtxrgisv5e~QSh-ELiPzqfE6yINdgx1aZqIonlibCwf4BWOMvuTtKw__" alt="email"></span> -->
-        <div class="icon-box">
-            <input type="text" placeholder="email@gmail.com"  required>
+        <div class="iconBox">
+            <div class="blue"></div>
+            <input type="text"  placeholder="email@gmail.com" required ><img src="{% static 'login/img/img4.png' %}" alt="">
         </div>
             <h3>Пароль</h3>
-            <input class="star" type="text" placeholder="*******" required>
+        <div class="iconBox2">
+            <div class="blue2"></div>
+            <input class="star" type="text" placeholder="*******" required><img src="{% static 'login/img/lock.png' %}" alt="">
+        </div>
             <button type="submit" >Зареєструватись</button>
             <a href="#">Вже маєте акаунт?</a>
     </form>
+
     
 </body>
 {% endblock %}
