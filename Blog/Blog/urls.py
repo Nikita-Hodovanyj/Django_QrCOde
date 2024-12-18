@@ -24,4 +24,5 @@ urlpatterns = [
     path('', render_home),
     path('home_after/', render_home_after),
     path('', include('login.urls'), name="login"),
+    path('',include("create.urls"), name='create'),
 ]
