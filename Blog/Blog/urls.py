@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from home import render_home
 from home_after import render_home_after
-
+from my_qrcodes import render_my_qrcodes
 from contact import render_contact
 
 
@@ -29,6 +29,7 @@ urlpatterns = [
     path('home_after/', render_home_after),
     path('', include('login.urls'), name="login"),
     path('contact/', render_contact),
-    path('',include("create.urls"), name='create')
+    path('',include("create.urls"), name='create'),
+    path('my_qrcodes/', render_my_qrcodes)
 
 ]

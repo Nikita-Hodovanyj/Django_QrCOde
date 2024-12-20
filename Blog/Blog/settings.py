@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'home',
     'home_after',
     'contact',
-    'create'
+    'create',
+    'my_qrcodes'
 
 ]
 
