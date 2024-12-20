@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'home',
-    'home_after'
+    'home_after',
+    'my_qrcodes',
 ]
 
 MIDDLEWARE = [

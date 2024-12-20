@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from home import render_home
 from home_after import render_home_after
+from my_qrcodes import render_my_qrcodes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', render_home),
     path('home_after/', render_home_after),
     path('', include('login.urls'), name="login"),
+    path('my_qrcodes/', render_my_qrcodes)
 ]
