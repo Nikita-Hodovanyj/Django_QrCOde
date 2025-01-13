@@ -65,7 +65,7 @@ footer{
   height: 204px;
   display: flex;
   gap: 99px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 10px 0 10px 0;
   gap: 204px;
@@ -74,8 +74,8 @@ footer{
   
 }
 .contacts-icons{
-  width: 400px;
-  height: 66px;
+  width: auto;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,8 +89,8 @@ footer{
 
 
 .copyright-logotype{
-  width: 400px;
-  height: 160px;
+  width: 272px;
+  height: auto;
   font-family: Inter;
   font-weight: bold;
   display: flex;
@@ -98,14 +98,14 @@ footer{
   justify-content: center;
   align-items: center;
   gap: 21px;
-  padding: 0 22px 0 22px
+  padding: 0;
 
 }
 
 
 .about-us{
-  width: 215px;
-  height: 118px;
+  width: 272px;
+  height: auto;
   
   display: flex;
   flex-direction: column;
@@ -124,8 +124,8 @@ footer{
 
 
 .footer-links{
-  width: 215px;
-  height: 51px;
+  width: 217px;
+  height: auto;
   font-size: 14px;
   display: flex;
   flex-direction: column;
