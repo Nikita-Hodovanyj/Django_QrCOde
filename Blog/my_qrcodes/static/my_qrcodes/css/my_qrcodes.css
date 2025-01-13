@@ -18,6 +18,11 @@ main{
   font-family: Century Gothic, sans-serif;
 }
 
+.my-qrcode-img{
+  width: 280px; 
+  height: 283.33px;
+}
+
 .filter{
   display: flex;
   justify-content: flex-end;
@@ -45,6 +50,7 @@ main{
 
 .qr-codes{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
   padding: 70px 86px 70px 86px;
