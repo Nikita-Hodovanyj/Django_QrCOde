@@ -59,8 +59,8 @@
 
 
 .sign-up-action {
-  width: 415px;
-  height: 94px;
+  width: 490px;
+  height: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -71,8 +71,8 @@
 
 
 .try-free-action{
-  width: 415px;
-  height: 94px;
+  width: 490px;
+  height: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -82,17 +82,10 @@
 }
 
 
-.action-text{
-  width: 415px;
-  height: 24px;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  
-}
+
 
 .sign-up-button{
-  width: 180px;
+  width: 490px;
   height: 61px;
   display: flex;
   justify-content: center;
@@ -102,7 +95,7 @@
   border-radius: 18px;
   font-family: century-gothic, sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   background-color: #4466FF;
   border: white solid 3px;
@@ -119,7 +112,7 @@
 
 
 .try-free-button{
-  width: 391px;
+  width: 490px;
   height: 61px;
   display: flex;
   justify-content: center;
@@ -129,7 +122,7 @@
   border-radius: 18px;
   font-family: century-gothic, sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   background-color: #0321A9;
   border: white solid 3px;
@@ -166,7 +159,7 @@
 }
 
 .functions-text p{
-  width: 500px;
+  width: 100vw;
   height: 58px;
   font-family: Inter;
   font-weight: bold;

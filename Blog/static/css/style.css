@@ -1,99 +1,99 @@
 
 html, body {
-    height: 100%; 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #E8ECFC;
-    display: flex;
-    flex-direction: column; 
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E8ECFC;
+  display: flex;
+  flex-direction: column; 
 }
 
 main {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
 header {
-    height: 50px;
-    background-color: #4466FF;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Century Gothic, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 0 40px;
+  height: 50px;
+  background-color: #4466FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Century Gothic, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 40px;
 }
 
 header a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 
 .qr-code-links,
 .login-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 
 footer {
-    height: 204px;
-    background-color: #4466FF;
-    color: #BBE9F7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 40px;
-    flex-shrink: 0; 
+  height: 204px;
+  background-color: #4466FF;
+  color: #BBE9F7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+  flex-shrink: 0; 
 }
 
 
 .about-us {
-    text-align: center;
+  text-align: center;
 }
 
 .about-us p {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 
 .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-links a {
-    text-decoration: none;
-    font-family: Inter, sans-serif;
-    font-weight: bold;
-    color: #BBE9F7;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: #BBE9F7;
 }
 
 
 .contacts-icons {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .contacts-icons img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 
 .copyright-logotype {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
