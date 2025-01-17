@@ -144,7 +144,7 @@
   padding: 10px;
   gap: 10px;
   border-radius: 28px;
-  font-family: century-gothic, sans-serif;
+  font-family: Century Gothic, sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: white;
@@ -162,10 +162,39 @@
 }
 
 
+/* .logout {
+  position: absolute;
+ top: 10px;    
+  right: 30px; 
+  margin: 0;   
+  font-size: 28px; 
+  color: #ffffff; 
+} */
 
 
 
+.logout {
+  position: absolute;
+  top: 10px;    
+  right: 20px;  
+  font-family: Century Gothic, sans-serif;
+  color: #ffffff;
 
+}
 
+.logout h6, .logout a {
+  margin: 0;    
+  display: inline-block;
+  font-size: 26px;  
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Century Gothic, sans-serif;
+}
 
-
+.logout a {
+  margin-left: 15px;
+  font-size: 23px;  
+}
+.logout h6{
+  font-size: 23px; 
+}

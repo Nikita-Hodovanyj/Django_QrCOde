@@ -17,7 +17,9 @@
   background-position: center;
   color: white;
 }
-
+a {
+  text-decoration: none;
+}
 .transparent-main-block {
   width: 100vw;
   height: 399px;
@@ -72,6 +74,7 @@
 
 .try-free-action{
   width: 490px;
+
   height: auto;
   text-align: center;
   display: flex;
@@ -93,7 +96,7 @@
   padding: 10px;
   gap: 10px;
   border-radius: 18px;
-  font-family: century-gothic, sans-serif;
+  font-family: Century Gothic, sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: white;
@@ -120,7 +123,7 @@
   padding: 10px;
   gap: 10px;
   border-radius: 18px;
-  font-family: century-gothic, sans-serif;
+  font-family: Century Gothic, sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: white;

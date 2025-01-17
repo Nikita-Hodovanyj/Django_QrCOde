@@ -1,3 +1,5 @@
+
+
 {% load static %}
 {% block link %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,22 +20,39 @@
 
 <body>
     <form method="post">
-        
+            {% csrf_token %}
             <h2>Зареєструватись</h2>
+
+            <!-- Поле ввода имени пользователя -->
             <h3>Електрона пошта</h3>
-        <div class="iconBox">
-            <div class="blue"></div>
-            <input type="text"  placeholder="email@gmail.com" required ><img src="{% static 'login/img/img4.png' %}" alt="">
-        </div>
+            <div class="iconBox">
+                <div class="blue"></div>
+                <input type="text" name="username" placeholder="name" required>
+                <img src="{% static 'login/img/img4.png' %}" alt="Иконка email">
+            </div>
             <h3>Пароль</h3>
-        <div class="iconBox2">
-            <div class="blue2"></div>
-            <input class="star" type="text" placeholder="*******" required><img src="{% static 'login/img/lock.png' %}" alt="">
-        </div>
+            <div class="iconBox2">
+                <div class="blue2"></div>
+                <input class="star" type="password" name="password" placeholder="*******" required>
+                <img src="{% static 'login/img/lock.png' %}" alt="Иконка замок">
+            </div>
+            {% if name %}
+                <p style="color: red;">Такий користувач вже існує</p>
+            {% endif %}
             <button type="submit" >Зареєструватись</button>
-            <a href="#">Вже маєте акаунт?</a>
+            <a href="/log">Вже маєте акаунт?</a>
     </form>
+    
+
 
     
 </body>
 {% endblock %}
+
+
+
+
+
+
+
+

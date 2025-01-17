@@ -8,16 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
-    <link rel="stylesheet" href="{% static 'home_after/css/home_after.css' %}">
     <link rel="stylesheet" href="{% static 'my_qrcodes/css/my_qrcodes.css' %}">
     <link rel="stylesheet" href="{% static 'contact/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'create/css/free.css' %}">
-    <link rel="stylesheet" href="{% static 'create/css/standard.css' %}">
-    <link rel="stylesheet" href="{% static 'create/css/pro.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home_after/css/home_after.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
     
-
 
     <title>{% block title %}{% endblock %}</title>
   </head>
@@ -25,19 +21,23 @@
     
 
     <header>
+      <div  class="logout">
+        <h6>{{ request.user.username }}</h6>
+        <a href="{% url 'logout' %}">Вийти</a>
+      </div>
 
       <img src="{% static 'images/logotype_qreasy.png' %}" alt="logotype_qreasy">
  
 
-      <nav class="qr-code-links">
-        <a href="home_after/">Cтворити QR-код</a>
-        <a href="my_qrcodes/">Мої QR-коди</a>
-      </nav>
       
-      <nav class="login-links">
-        <a href="/contact" class="contact">Контакти</a>
-        <a href="/log">Увійти/Зареєструватись</a>
-      </nav>
+      <div class="qr-code-links">
+        <a href="{% url 'home_after' %}">Cтворити QR-код</a>
+        <a href="{% url 'my_qrcodes' %}">Мої QR-коди</a>
+      </div>
+    
+      <div class="login-links">
+          <a href="{% url 'contact' %}">Контакти</a>
+      </div>
 
 
     </header>
@@ -47,35 +47,31 @@
       {% endblock %}
     
 
-      {% if not footer %}
-
-      <footer>
-          <div class="about-us" >
-          <p> Про нас </p>
-          <nav class = "footer-links">
-              <a href="">Контакти</a>
-              <a href="">Питання</a>
-              <a href="">Політика конфіденційності</a>
-          </nav>
-            
-          </div> 
+    <footer>
+        <div class="about-us" >
+         <p> Про нас </p>
+         <nav class = "footer-links">
+            <a href="">Контакти</a>
+            <a href="">Питання</a>
+            <a href="">Політика конфіденційності</a>
+         </nav>
+          
+        </div> 
 
 
-          <div class = "contacts-icons">
-            <img src = "{% static 'images/black-youtube-icon.png' %}" alt="black-youtube-icon">
-            <img src = "{% static 'images/email-icon-design.png' %}" alt="email-icon-design">
-            <img src = "{% static 'images/telegram-black-icon1.png' %}" alt="telegram-black-icon">
-            <img src = "{% static 'images/black-instagram-icon.png' %}" alt="black-instagram-icon">
-          </div>
+        <div class = "contacts-icons">
+          <img src = "{% static 'images/black-youtube-icon.png' %}" alt="black-youtube-icon">
+          <img src = "{% static 'images/email-icon-design.png' %}" alt="email-icon-design">
+          <img src = "{% static 'images/telegram-black-icon1.png' %}" alt="telegram-black-icon">
+          <img src = "{% static 'images/black-instagram-icon.png' %}" alt="black-instagram-icon">
+        </div>
 
-          <div class = "copyright-logotype">
-            <img src="{% static 'images/logotype_qreasy.png' %}" alt="logotype_qreasy">
-            <p>&copy; Copyright 2024 QR-EASY.COM</p>
-          </div>
+        <div class = "copyright-logotype">
+          <img src="{% static 'images/logotype_qreasy2.png' %}" alt="logotype_qreasy">
+          <p>&copy; Copyright 2024 QR-EASY.COM</p>
+        </div>
 
-      </footer>
-      
-    {% endif %}
+    </footer>
     
     
     

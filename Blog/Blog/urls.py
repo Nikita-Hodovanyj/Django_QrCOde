@@ -20,16 +20,15 @@ from home import render_home
 from home_after import render_home_after
 from my_qrcodes import render_my_qrcodes
 from contact import render_contact
-
-
-
+from login.views import logout_user
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', render_home),
-    path('home_after/', render_home_after),
+    path('home_after/', render_home_after, name='home_after'),
     path('', include('login.urls'), name="login"),
-    path('contact/', render_contact),
+    path('my_qrcodes/', render_my_qrcodes,name='my_qrcodes'),
+    path('contact/', render_contact, name="contact"),
     path('',include("create.urls"), name='create'),
-    path('my_qrcodes/', render_my_qrcodes)
-
+    path('logout/', logout_user, name = "logout")
+    
 ]

@@ -109,7 +109,7 @@ form button{
 }
 form a{
     width: 148px;
-    height: 30px;
+    height: 17px;
     display: flex;
     margin-left: 200px;
     text-decoration: none;
@@ -162,3 +162,8 @@ form a{
     position: absolute;
  }
  
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

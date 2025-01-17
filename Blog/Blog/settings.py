@@ -40,10 +40,9 @@ INSTALLED_APPS = [
     'login',
     'home',
     'home_after',
+    'my_qrcodes',
     'contact',
-    'create',
-    'my_qrcodes'
-
+    'create'
 ]
 
 MIDDLEWARE = [
