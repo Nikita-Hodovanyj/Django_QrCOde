@@ -1,0 +1,51 @@
+<!-- {% extends 'base.html' %} -->
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/standard.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'create/css/free.css' %}"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+
+
+
+<body>
+    
+    <div class="free">
+        <div>
+            <p class="p1">Standard</p>
+            <p class="p2">QR-code</p>
+            <p class="p3">12 місяців</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <form>
+            <h2><img src="{% static 'img/icon_link.png' %}" alt=""> Ваш url-адрес</h1>
+            <input type="text" placeholder="https://qr-easy-generator.com/" required>
+            <h2><img src="{% static 'img/icon_name.png' %}" alt=""> Ваша назва</h2>
+            <input type="text" placeholder="QREasy-код" required>
+            <h2><img src="{% static 'img/icon_name.png' %}" alt=""> Укажіть розмір QR-коду</h2>
+            <input type="text" placeholder="100px" required>
+            <h2><img src="{% static 'img/icon_name.png' %}" alt=""> Укажіть колір QR-коду</h2>
+            <input type="text" placeholder="red" required>
+        </form>
+        <div class = "QR_button">
+            <img class="QR" src="{% static 'img/QR.png' %}" alt="">
+            <button type="submit" >Створити</button>
+        </div>
+
+    </div>
+    
+
+
+
+</body>
+
+
+
+{% endblock %}
