@@ -21,10 +21,12 @@
     
 
     <header>
-      <div  class="logout">
-        <h6>{{ request.user.username }}</h6>
-        <a href="{% url 'logout' %}">Вийти</a>
-      </div>
+      {% if request.user.is_authenticated %}
+        <div class="logout">
+            <h6>{{ request.user.username }}</h6>
+            <a href="{% url 'logout' %}">Вийти</a>
+        </div>
+      {% endif %}
 
       <img src="{% static 'images/logotype_qreasy.png' %}" alt="logotype_qreasy">
  

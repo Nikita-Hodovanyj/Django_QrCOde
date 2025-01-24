@@ -21,21 +21,26 @@ from django.shortcuts import render, redirect
 
 def render_registr(request):
     name = False
+    password_confirmation = False
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
-        try:
-            User.objects.create_user(username=username, password=password)
+        password_confirmation = request.POST.get("password_confirmation")
+        if password == password_confirmation:
+            try:
+                User.objects.create_user(username=username, password=password)
 
-            return redirect("login")
-        except IntegrityError:
-            name = True
-
+                return redirect("login")
+            except IntegrityError:
+                name = True
+        else:
+            password_confirmation = True
     return render(
         request=request,
         template_name="registration.html",
         context={
-            "name": name
+            "name": name,
+            "password_confirmation": password_confirmation
         }
     )
 

@@ -24,7 +24,7 @@
             <h2>Зареєструватись</h2>
 
             <!-- Поле ввода имени пользователя -->
-            <h3>Електрона пошта</h3>
+            <h3>Ім`я</h3>
             <div class="iconBox">
                 <div class="blue"></div>
                 <input type="text" name="username" placeholder="name" required>
@@ -36,8 +36,17 @@
                 <input class="star" type="password" name="password" placeholder="*******" required>
                 <img src="{% static 'login/img/lock.png' %}" alt="Иконка замок">
             </div>
+            <h3>Підтвердження паролю</h3>
+            <div class="iconBox">
+                <div class="blue"></div>
+                <input class="star" type="password" name="password_confirmation" placeholder="*******" required>
+                <img src="{% static 'login/img/lock.png' %}" alt="">
+            </div>
             {% if name %}
                 <p style="color: red;">Такий користувач вже існує</p>
+            
+            {% elif password_confirmation %}
+                <p style="color: red;">Паролі не співпадають</p>
             {% endif %}
             <button type="submit" >Зареєструватись</button>
             <a href="/log">Вже маєте акаунт?</a>
